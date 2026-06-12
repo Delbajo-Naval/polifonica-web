@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
-          <img src="/meeple.png" alt="Polifónica" width={32} height={32} />
+          <img src="/logo-poli.png" alt="Polifónica" width={40} height={40} />
           <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#7C3AED]">
             Polifónica
           </span>

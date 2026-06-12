@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <img src="/meeple.png" alt="Polifónica" width={28} height={28} />
+            <img src="/logo-poli.png" alt="Polifónica" width={36} height={36} />
             <span className="font-[family-name:var(--font-playfair)] text-lg font-bold text-white">
               Polifónica
             </span>
