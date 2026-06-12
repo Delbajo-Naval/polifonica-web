@@ -45,9 +45,8 @@ export default function QuienesSomos() {
             </h2>
             <p className="text-[#57534E] text-lg leading-relaxed mb-8">
               Especialista en juegos de mesa como herramienta educativa y cultural.
-              Creó Polifónica para demostrar que los juegos de mesa modernos son
-              dispositivos de aprendizaje tan valiosos como el ajedrez o la robótica,
-              con el agregado de la interacción social genuina.
+              Creó Polifónica convencida de que jugar juntos es una de las formas
+              más ricas de aprender, pensar y vincularse.
             </p>
 
             <ul className="space-y-4">
