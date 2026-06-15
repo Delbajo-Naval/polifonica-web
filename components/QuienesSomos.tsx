@@ -44,9 +44,17 @@ export default function QuienesSomos() {
               Luciana Minadeo
             </h2>
             <p className="text-[#57534E] text-lg leading-relaxed mb-8">
-              Especialista en juegos de mesa como herramienta educativa y cultural.
-              Creó Polifónica convencida de que jugar juntos es una de las formas
-              más ricas de aprender, pensar y vincularse.
+              Soy Profesora y Licenciada en Letras, especialista en juegos de mesa
+              como herramienta educativa y cultural. A lo largo de mi trayectoria
+              trabajé en instituciones públicas y privadas en niveles primario,
+              secundario y universitario, acompañando procesos de aprendizaje en
+              Lengua y Literatura y diseñando propuestas pedagógicas con impacto real.
+              Me especializo en producción y edición de textos, mediación cultural y
+              diseño de experiencias educativas innovadoras, integrando juegos de mesa
+              y tecnologías digitales como herramientas para el aprendizaje, la
+              socialización y el pensamiento crítico. Creé Polifónica convencida de
+              que jugar juntos es una de las formas más ricas de aprender, pensar
+              y vincularse.
             </p>
 
             <ul className="space-y-4">
