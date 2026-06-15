@@ -19,9 +19,10 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-[#57534E] max-w-2xl mx-auto mb-10 leading-relaxed">
-          Un club de juegos de mesa modernos con mediación pedagógica.
-          Encuentros presenciales para adolescentes, instituciones y empresas
-          que eligen el pensamiento estratégico como herramienta de transformación.
+          Una propuesta que involucra mediación pedagógica profesional
+          con juegos de mesa modernos. Encuentros presenciales para adolescentes,
+          instituciones y empresas que eligen el pensamiento estratégico
+          como herramienta de transformación.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
