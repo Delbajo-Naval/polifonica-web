@@ -22,7 +22,7 @@ const logros = [
 
 export default function QuienesSomos() {
   return (
-    <section id="quienes-somos" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
+    <section id="quienes-somos" className="py-20 sm:py-28" style={{ backgroundColor: '#D2D5F4' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Photo placeholder */}

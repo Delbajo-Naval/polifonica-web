@@ -11,7 +11,7 @@ const placeholders = [
 
 export default function Galeria() {
   return (
-    <section id="galeria" className="py-20 sm:py-28" style={{ backgroundColor: '#FDF0F5' }}>
+    <section id="galeria" className="py-20 sm:py-28" style={{ backgroundColor: '#D2D5F4' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>

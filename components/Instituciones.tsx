@@ -25,7 +25,7 @@ const beneficios = [
 
 export default function Instituciones() {
   return (
-    <section id="instituciones" className="py-20 sm:py-28" style={{ backgroundColor: '#FDF0F5' }}>
+    <section id="instituciones" className="py-20 sm:py-28" style={{ backgroundColor: '#D2D5F4' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
