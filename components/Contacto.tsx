@@ -34,7 +34,7 @@ export default function Contacto() {
   };
 
   return (
-    <section id="contacto" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
+    <section id="contacto" className="py-20 sm:py-28" style={{ background: 'linear-gradient(135deg, #D2D5F4 0%, #F6F3ED 55%, #F0E6D3 100%)' }}>
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
