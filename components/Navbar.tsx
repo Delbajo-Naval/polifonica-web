@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
           <img src="/logo-poli.png" alt="Polifónica" width={40} height={40} />
-          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
+          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#7C3AED]">
             Polifónica
           </span>
         </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="ml-2 bg-[#7C3AED] text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#6D28D9] transition-colors" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}
+            className="ml-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#6D28D9] transition-colors"
           >
             Inscribirse
           </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="mt-2 bg-[#7C3AED] text-sm font-semibold px-4 py-2 rounded-full text-center hover:bg-[#6D28D9] transition-colors" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}
+            className="mt-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full text-center hover:bg-[#6D28D9] transition-colors"
             onClick={() => setMenuOpen(false)}
           >
             Inscribirse

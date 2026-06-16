@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-24 pb-16">
         <h1 className="font-[family-name:var(--font-playfair)] text-5xl sm:text-6xl md:text-7xl font-bold text-[#1C1917] leading-tight mb-6">
           Jugamos.{" "}
-          <span style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>Pensamos.</span>
+          <span className="text-[#7C3AED]">Pensamos.</span>
           <br />
           Nos encontramos.
         </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contacto"
-            className="bg-[#7C3AED] font-semibold px-8 py-3.5 rounded-full hover:bg-[#6D28D9] transition-colors text-base shadow-lg shadow-[#7C3AED]/25" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}
+            className="bg-[#7C3AED] text-white font-semibold px-8 py-3.5 rounded-full hover:bg-[#6D28D9] transition-colors text-base shadow-lg shadow-[#7C3AED]/25"
           >
             Quiero inscribirme
           </a>

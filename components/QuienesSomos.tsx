@@ -37,7 +37,7 @@ export default function QuienesSomos() {
 
           {/* Content */}
           <div className="order-1 md:order-2">
-            <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
+            <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
               Quiénes somos
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-6 leading-tight">

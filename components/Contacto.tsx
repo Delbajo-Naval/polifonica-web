@@ -37,7 +37,7 @@ export default function Contacto() {
     <section id="contacto" className="py-20 sm:py-28 bg-gradient-to-b from-[#EDE9FE] to-[#FDF8F0]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
+          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
             Contacto
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-4">

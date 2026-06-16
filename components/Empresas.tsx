@@ -24,7 +24,7 @@ export default function Empresas() {
     <section id="empresas" className="py-20 sm:py-28 bg-gradient-to-b from-[#EDE9FE] to-[#FDF8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
-          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
+          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
             Para empresas
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-4">
@@ -35,7 +35,7 @@ export default function Empresas() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Stat highlight */}
           <div className="bg-white rounded-2xl p-10 shadow-sm border border-[#EDE9FE] text-center">
-            <p className="text-7xl font-bold font-[family-name:var(--font-playfair)] mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>30%</p>
+            <p className="text-7xl font-bold font-[family-name:var(--font-playfair)] text-[#7C3AED] mb-3">30%</p>
             <p className="text-[#44403C] text-lg font-medium mb-4">de los equipos colabora bien entre áreas</p>
             <p className="text-[#78716C] text-sm">Fuente: Asana State of Work 2025</p>
 
@@ -49,7 +49,7 @@ export default function Empresas() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}
+              className="inline-flex items-center gap-2 bg-[#7C3AED] text-white font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors"
             >
               Diseñar una jornada
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
