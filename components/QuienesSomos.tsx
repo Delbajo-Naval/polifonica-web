@@ -43,19 +43,23 @@ export default function QuienesSomos() {
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-6 leading-tight">
               Luciana Minadeo
             </h2>
-            <p className="text-[#57534E] text-lg leading-relaxed mb-8">
-              Soy Profesora y Licenciada en Letras, especialista en juegos de mesa
-              como herramienta educativa y cultural. A lo largo de mi trayectoria
-              trabajé en instituciones públicas y privadas en niveles primario,
-              secundario y universitario, acompañando procesos de aprendizaje en
-              Lengua y Literatura y diseñando propuestas pedagógicas con impacto real.
-              Me especializo en producción y edición de textos, mediación cultural y
-              diseño de experiencias educativas innovadoras, integrando juegos de mesa
-              y tecnologías digitales como herramientas para el aprendizaje, la
-              socialización y el pensamiento crítico. Creé Polifónica convencida de
-              que jugar juntos es una de las formas más ricas de aprender, pensar
-              y vincularse.
-            </p>
+            <div className="text-[#57534E] text-lg leading-relaxed mb-8 text-justify space-y-4">
+              <p>
+                Soy Profesora y Licenciada en Letras, especialista en juegos de mesa
+                como herramienta educativa y cultural. A lo largo de mi trayectoria
+                trabajé en instituciones públicas y privadas en niveles primario,
+                secundario y universitario, acompañando procesos de aprendizaje en
+                Lengua y Literatura y diseñando propuestas pedagógicas con impacto real.
+              </p>
+              <p>
+                Me especializo en producción y edición de textos, mediación cultural y
+                diseño de experiencias educativas innovadoras, integrando juegos de mesa
+                y tecnologías digitales como herramientas para el aprendizaje, la
+                socialización y el pensamiento crítico. Creé Polifónica convencida de
+                que jugar juntos es una de las formas más ricas de aprender, pensar
+                y vincularse.
+              </p>
+            </div>
 
             <ul className="space-y-4">
               {logros.map((l) => (
