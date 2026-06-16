@@ -37,7 +37,7 @@ export default function Contacto() {
     <section id="contacto" className="py-20 sm:py-28 bg-gradient-to-b from-[#EDE9FE] to-[#FDF8F0]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#2E3A59' }}>
             Contacto
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-4">
@@ -122,7 +122,7 @@ export default function Contacto() {
 
             <button
               type="submit"
-              className="w-full bg-[#7C3AED] text-white font-semibold py-3.5 rounded-full hover:bg-[#6D28D9] transition-colors text-base"
+              className="w-full font-semibold py-3.5 rounded-full hover:opacity-90 transition-opacity text-base" style={{ backgroundColor: '#E07A7A', color: 'white' }}
             >
               Enviar consulta
             </button>
