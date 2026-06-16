@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
           <img src="/logo-poli.png" alt="Polifónica" width={40} height={40} />
-          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold" style={{ color: '#2E3A59' }}>
+          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#7C3AED]">
             Polifónica
           </span>
         </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="ml-2 text-sm font-semibold px-4 py-2 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: '#E07A7A', color: 'white' }}
+            className="ml-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#6D28D9] transition-colors"
           >
             Inscribirse
           </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="mt-2 text-sm font-semibold px-4 py-2 rounded-full text-center hover:opacity-90 transition-opacity" style={{ backgroundColor: '#E07A7A', color: 'white' }}
+            className="mt-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full text-center hover:bg-[#6D28D9] transition-colors"
             onClick={() => setMenuOpen(false)}
           >
             Inscribirse
