@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-6 pt-6 text-xs text-center sm:text-left" style={{ borderColor: '#D2D5F4', borderOpacity: 0.2, color: '#D2D5F4', opacity: 0.4 }}>
+        <div className="border-t mt-6 pt-6 text-xs text-center sm:text-left" style={{ borderColor: 'rgba(210,213,244,0.2)', color: '#D2D5F4', opacity: 0.4 }}>
           © {new Date().getFullYear()} Polifónica — Luciana Minadeo · Posadas, Misiones
         </div>
       </div>
