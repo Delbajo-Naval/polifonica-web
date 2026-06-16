@@ -30,7 +30,7 @@ export default function Instituciones() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div>
-            <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
               Para instituciones y municipios
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-6 leading-tight">
@@ -52,7 +52,7 @@ export default function Instituciones() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] text-white font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#7C3AED] font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}
             >
               Quiero conocer más
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

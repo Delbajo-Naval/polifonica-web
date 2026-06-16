@@ -14,7 +14,7 @@ export default function Galeria() {
     <section id="galeria" className="py-20 sm:py-28 bg-[#FDF8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#D2D5F4', textShadow: '0px 1px 3px rgba(60, 40, 120, 0.4)' }}>
             Galería
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917]">
