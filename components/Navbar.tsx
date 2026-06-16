@@ -25,14 +25,15 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#FDF8F0]/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        scrolled ? "backdrop-blur-sm shadow-sm" : "bg-transparent"
       }`}
+      style={scrolled ? { backgroundColor: '#F6F3ED' + 'F2' } : {}}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
           <img src="/logo-poli.png" alt="Polifónica" width={40} height={40} />
-          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#7C3AED]">
+          <span className="font-[family-name:var(--font-playfair)] text-xl font-bold" style={{ color: '#343434' }}>
             Polifónica
           </span>
         </a>
@@ -43,14 +44,16 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-[#57534E] hover:text-[#7C3AED] transition-colors font-medium"
+              className="text-sm font-medium transition-opacity hover:opacity-70"
+              style={{ color: '#B5477A' }}
             >
               {l.label}
             </a>
           ))}
           <a
             href="#contacto"
-            className="ml-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#6D28D9] transition-colors"
+            className="ml-2 text-white text-sm font-semibold px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
+            style={{ backgroundColor: '#B5477A' }}
           >
             Inscribirse
           </a>
@@ -58,7 +61,8 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-[#7C3AED]"
+          className="md:hidden p-2"
+          style={{ color: '#B5477A' }}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menú"
         >
@@ -68,12 +72,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#FDF8F0] border-t border-[#EDE9FE] px-4 py-4 flex flex-col gap-3">
+        <div className="md:hidden border-t px-4 py-4 flex flex-col gap-3" style={{ backgroundColor: '#F6F3ED', borderColor: '#D2D5F4' }}>
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-[#57534E] hover:text-[#7C3AED] py-1 font-medium"
+              className="text-sm py-1 font-medium"
+              style={{ color: '#B5477A' }}
               onClick={() => setMenuOpen(false)}
             >
               {l.label}
@@ -81,7 +86,8 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="mt-2 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full text-center hover:bg-[#6D28D9] transition-colors"
+            className="mt-2 text-white text-sm font-semibold px-4 py-2 rounded-full text-center hover:opacity-90 transition-opacity"
+            style={{ backgroundColor: '#B5477A' }}
             onClick={() => setMenuOpen(false)}
           >
             Inscribirse

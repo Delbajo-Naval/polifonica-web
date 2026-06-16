@@ -11,13 +11,13 @@ const placeholders = [
 
 export default function Galeria() {
   return (
-    <section id="galeria" className="py-20 sm:py-28 bg-[#FDF8F0]">
+    <section id="galeria" className="py-20 sm:py-28" style={{ backgroundColor: '#FDF0F5' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
             Galería
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917]">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold" style={{ color: '#343434' }}>
             El club en imágenes
           </h2>
         </div>
@@ -26,17 +26,18 @@ export default function Galeria() {
           {placeholders.map((p) => (
             <div
               key={p.id}
-              className={`${p.aspect} break-inside-avoid rounded-xl bg-gradient-to-br from-[#C4B5FD]/30 to-[#EDE9FE] border-2 border-dashed border-[#C4B5FD] flex items-center justify-center text-[#9B7FD4] overflow-hidden`}
+              className={`${p.aspect} break-inside-avoid rounded-xl border-2 border-dashed flex items-center justify-center overflow-hidden`}
+              style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.8 }}
             >
-              <div className="text-center p-4 flex flex-col items-center gap-2">
-                <Camera size={28} className="text-[#9B7FD4]" />
+              <div className="text-center p-4 flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
+                <Camera size={28} />
                 <p className="text-xs font-medium leading-tight">{p.label}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-sm text-[#A8A29E] mt-8">
+        <p className="text-center text-sm mt-8" style={{ color: '#343434', opacity: 0.5 }}>
           Las fotos reales se cargarán próximamente
         </p>
       </div>

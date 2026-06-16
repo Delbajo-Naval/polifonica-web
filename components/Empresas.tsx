@@ -21,27 +21,27 @@ const diferenciales = [
 
 export default function Empresas() {
   return (
-    <section id="empresas" className="py-20 sm:py-28 bg-gradient-to-b from-[#EDE9FE] to-[#FDF8F0]">
+    <section id="empresas" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
-          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
             Para empresas
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-4">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#343434' }}>
             Integración de equipos con propósito
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Stat highlight */}
-          <div className="bg-white rounded-2xl p-10 shadow-sm border border-[#EDE9FE] text-center">
-            <p className="text-7xl font-bold font-[family-name:var(--font-playfair)] text-[#7C3AED] mb-3">30%</p>
-            <p className="text-[#44403C] text-lg font-medium mb-4">de los equipos colabora bien entre áreas</p>
-            <p className="text-[#78716C] text-sm">Fuente: Asana State of Work 2025</p>
+          <div className="rounded-2xl p-10 shadow-sm border text-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
+            <p className="text-7xl font-bold font-[family-name:var(--font-playfair)] mb-3" style={{ color: '#B5477A' }}>30%</p>
+            <p className="text-lg font-medium mb-4" style={{ color: '#343434' }}>de los equipos colabora bien entre áreas</p>
+            <p className="text-sm" style={{ color: '#343434', opacity: 0.6 }}>Fuente: Asana State of Work 2025</p>
 
-            <div className="my-8 border-t border-[#EDE9FE]" />
+            <div className="my-8 border-t" style={{ borderColor: '#B5477A', opacity: 0.2 }} />
 
-            <p className="text-[#44403C] leading-relaxed mb-6">
+            <p className="leading-relaxed mb-6" style={{ color: '#343434', opacity: 0.8 }}>
               Los juegos de mesa modernos crean situaciones reales de colaboración,
               negociación y toma de decisiones bajo presión —
               en un entorno donde equivocarse no tiene costo.
@@ -49,7 +49,8 @@ export default function Empresas() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] text-white font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors"
+              className="inline-flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#B5477A' }}
             >
               Diseñar una jornada
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -60,10 +61,10 @@ export default function Empresas() {
 
           {/* Differentials */}
           <div>
-            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#1C1917] mb-6">
+            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold mb-6" style={{ color: '#343434' }}>
               Por qué Polifónica es diferente
             </h3>
-            <p className="text-[#57534E] mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed" style={{ color: '#343434', opacity: 0.75 }}>
               No es un escape room ni una tarde de juegos.
               Cada jornada tiene objetivo, estructura y diseño pedagógico
               orientado a resultados concretos: comunicación, trabajo en equipo
@@ -71,9 +72,9 @@ export default function Empresas() {
             </p>
             <ul className="space-y-4">
               {diferenciales.map(({ Icon, texto }) => (
-                <li key={texto} className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-[#EDE9FE]">
-                  <Icon size={20} className="text-[#7C3AED] shrink-0" />
-                  <p className="text-[#44403C] font-medium">{texto}</p>
+                <li key={texto} className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 border" style={{ borderColor: '#D2D5F4' }}>
+                  <Icon size={20} className="shrink-0" style={{ color: '#B5477A' }} />
+                  <p className="font-medium" style={{ color: '#343434' }}>{texto}</p>
                 </li>
               ))}
             </ul>

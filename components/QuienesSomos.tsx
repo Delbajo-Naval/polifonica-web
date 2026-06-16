@@ -22,14 +22,14 @@ const logros = [
 
 export default function QuienesSomos() {
   return (
-    <section id="quienes-somos" className="py-20 sm:py-28 bg-[#FDF8F0]">
+    <section id="quienes-somos" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Photo placeholder */}
           <div className="order-2 md:order-1">
-            <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl bg-gradient-to-br from-[#C4B5FD]/40 to-[#EDE9FE] border-2 border-dashed border-[#C4B5FD] flex items-center justify-center text-[#9B7FD4]">
-              <div className="text-center flex flex-col items-center gap-2">
-                <Camera size={40} className="text-[#9B7FD4]" />
+            <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl border-2 border-dashed flex items-center justify-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.8 }}>
+              <div className="text-center flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
+                <Camera size={40} />
                 <p className="text-sm font-medium">Foto de Luciana</p>
               </div>
             </div>
@@ -37,13 +37,13 @@ export default function QuienesSomos() {
 
           {/* Content */}
           <div className="order-1 md:order-2">
-            <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
               Quiénes somos
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-6 leading-tight">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-6 leading-tight" style={{ color: '#343434' }}>
               Luciana Minadeo
             </h2>
-            <div className="text-[#57534E] text-lg leading-relaxed mb-8 text-justify space-y-4">
+            <div className="text-lg leading-relaxed mb-8 text-justify space-y-4" style={{ color: '#343434', opacity: 0.75 }}>
               <p>
                 Soy Profesora y Licenciada en Letras, especialista en juegos de mesa
                 como herramienta educativa y cultural. A lo largo de mi trayectoria
@@ -64,8 +64,8 @@ export default function QuienesSomos() {
             <ul className="space-y-4">
               {logros.map((l) => (
                 <li key={l.texto} className="flex items-start gap-3">
-                  <l.Icon size={20} className="text-[#7C3AED] shrink-0 mt-0.5" />
-                  <p className="text-[#44403C] text-sm leading-relaxed">{l.texto}</p>
+                  <l.Icon size={20} className="shrink-0 mt-0.5" style={{ color: '#B5477A' }} />
+                  <p className="text-sm leading-relaxed" style={{ color: '#343434', opacity: 0.8 }}>{l.texto}</p>
                 </li>
               ))}
             </ul>

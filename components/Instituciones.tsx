@@ -25,26 +25,26 @@ const beneficios = [
 
 export default function Instituciones() {
   return (
-    <section id="instituciones" className="py-20 sm:py-28 bg-[#FDF8F0]">
+    <section id="instituciones" className="py-20 sm:py-28" style={{ backgroundColor: '#FDF0F5' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div>
-            <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
               Para instituciones y municipios
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-6 leading-tight">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-6 leading-tight" style={{ color: '#343434' }}>
               Una política cultural que falta
             </h2>
 
-            <blockquote className="border-l-4 border-[#7C3AED] pl-5 mb-8 bg-[#EDE9FE] rounded-r-xl py-4 pr-4">
-              <p className="text-[#44403C] italic leading-relaxed">
+            <blockquote className="border-l-4 pl-5 mb-8 rounded-r-xl py-4 pr-4" style={{ borderColor: '#B5477A', backgroundColor: '#D2D5F4' + '55' }}>
+              <p className="italic leading-relaxed" style={{ color: '#343434' }}>
                 "Muchos municipios ya tienen ajedrez, robótica, cine y arte.
                 No tienen alfabetización en juegos de mesa contemporáneos."
               </p>
             </blockquote>
 
-            <p className="text-[#57534E] leading-relaxed mb-8">
+            <p className="leading-relaxed mb-8" style={{ color: '#343434', opacity: 0.75 }}>
               Polifónica ofrece un programa con fundamentación pedagógica y académica
               que permite a las instituciones justificar el presupuesto como inversión
               en cultura, educación y cohesión social — no como entretenimiento.
@@ -52,7 +52,8 @@ export default function Instituciones() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] text-white font-semibold px-7 py-3 rounded-full hover:bg-[#6D28D9] transition-colors"
+              className="inline-flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#B5477A' }}
             >
               Quiero conocer más
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -64,10 +65,10 @@ export default function Instituciones() {
           {/* Benefits */}
           <div className="grid sm:grid-cols-2 gap-4">
             {beneficios.map(({ Icon, titulo, texto }) => (
-              <div key={titulo} className="bg-white rounded-xl p-5 border border-[#EDE9FE] hover:border-[#C4B5FD] transition-colors">
-                <Icon size={20} className="text-[#7C3AED] mb-3" />
-                <h3 className="font-semibold text-[#1C1917] text-sm mb-2">{titulo}</h3>
-                <p className="text-[#78716C] text-sm leading-relaxed">{texto}</p>
+              <div key={titulo} className="bg-white rounded-xl p-5 border hover:opacity-90 transition-opacity" style={{ borderColor: '#D2D5F4' }}>
+                <Icon size={20} className="mb-3" style={{ color: '#B5477A' }} />
+                <h3 className="font-semibold text-sm mb-2" style={{ color: '#343434' }}>{titulo}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>{texto}</p>
               </div>
             ))}
           </div>

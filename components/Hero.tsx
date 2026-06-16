@@ -4,21 +4,22 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#EDE9FE] via-[#FDF8F0] to-[#F0E6D3]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: '#F6F3ED' }}
     >
       {/* Decorative blobs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#C4B5FD]/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#FDE68A]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: '#D2D5F4', opacity: 0.3 }} />
+      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: '#FDF0F5', opacity: 0.6 }} />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-24 pb-16">
-        <h1 className="font-[family-name:var(--font-playfair)] text-5xl sm:text-6xl md:text-7xl font-bold text-[#1C1917] leading-tight mb-6">
+        <h1 className="font-[family-name:var(--font-playfair)] text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6" style={{ color: '#343434' }}>
           Jugamos.{" "}
-          <span className="text-[#7C3AED]">Pensamos.</span>
+          <span style={{ color: '#B5477A' }}>Pensamos.</span>
           <br />
           Nos encontramos.
         </h1>
 
-        <p className="text-lg sm:text-xl text-[#57534E] max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>
           Una propuesta que involucra mediación pedagógica profesional
           con juegos de mesa modernos. Encuentros presenciales para adolescentes,
           instituciones y empresas que eligen el pensamiento estratégico
@@ -28,13 +29,15 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contacto"
-            className="bg-[#7C3AED] text-white font-semibold px-8 py-3.5 rounded-full hover:bg-[#6D28D9] transition-colors text-base shadow-lg shadow-[#7C3AED]/25"
+            className="text-white font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity text-base shadow-lg"
+            style={{ backgroundColor: '#B5477A' }}
           >
             Quiero inscribirme
           </a>
           <a
             href="#contacto"
-            className="bg-white/80 text-[#7C3AED] font-semibold px-8 py-3.5 rounded-full border border-[#C4B5FD] hover:bg-[#EDE9FE] transition-colors text-base backdrop-blur-sm"
+            className="bg-transparent font-semibold px-8 py-3.5 rounded-full border-2 hover:opacity-80 transition-opacity text-base"
+            style={{ borderColor: '#B5477A', color: '#B5477A' }}
           >
             Contactar
           </a>
@@ -42,9 +45,9 @@ export default function Hero() {
 
         {/* Placeholder image area */}
         <div className="mt-16 mx-auto max-w-3xl">
-          <div className="aspect-[16/7] rounded-2xl bg-gradient-to-br from-[#C4B5FD]/50 to-[#EDE9FE] border-2 border-dashed border-[#C4B5FD] flex items-center justify-center text-[#9B7FD4]">
-            <div className="text-center flex flex-col items-center gap-2">
-              <Camera size={40} className="text-[#9B7FD4]" />
+          <div className="aspect-[16/7] rounded-2xl border-2 border-dashed flex items-center justify-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.7 }}>
+            <div className="text-center flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
+              <Camera size={40} />
               <p className="text-sm font-medium">Foto destacada del club</p>
             </div>
           </div>
@@ -52,7 +55,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#9B7FD4]">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1" style={{ color: '#B5477A' }}>
         <span className="text-xs font-medium">Conocé más</span>
         <svg className="animate-bounce" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M6 9l6 6 6-6" />

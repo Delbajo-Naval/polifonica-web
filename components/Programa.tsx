@@ -19,17 +19,17 @@ const comoFunciona = [
 
 export default function Programa() {
   return (
-    <section id="programa" className="py-20 sm:py-28 bg-gradient-to-b from-[#F0E6D3] to-[#FDF8F0]">
+    <section id="programa" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="text-[#7C3AED] font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
             El programa
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#1C1917] mb-4">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#343434' }}>
             Para adolescentes
           </h2>
-          <p className="text-[#57534E] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>
             Encuentros presenciales semanales de 2 horas para jóvenes de 13 a 17 años,
             con curaduría especializada de juegos modernos y mediación pedagógica activa.
           </p>
@@ -37,15 +37,15 @@ export default function Programa() {
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Details card */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#EDE9FE]">
-            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#1C1917] mb-6">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border" style={{ borderColor: '#D2D5F4' }}>
+            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold mb-6" style={{ color: '#343434' }}>
               Cómo funciona
             </h3>
             <ul className="space-y-4">
               {comoFunciona.map(({ Icon, texto }) => (
                 <li key={texto} className="flex items-start gap-3">
-                  <Icon size={20} className="text-[#7C3AED] shrink-0 mt-0.5" />
-                  <p className="text-[#44403C] leading-relaxed">{texto}</p>
+                  <Icon size={20} className="shrink-0 mt-0.5" style={{ color: '#B5477A' }} />
+                  <p className="leading-relaxed" style={{ color: '#343434', opacity: 0.8 }}>{texto}</p>
                 </li>
               ))}
             </ul>
@@ -53,17 +53,18 @@ export default function Programa() {
 
           {/* Skills grid */}
           <div>
-            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#1C1917] mb-6">
+            <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-bold mb-6" style={{ color: '#343434' }}>
               Qué desarrolla
             </h3>
             <div className="grid grid-cols-2 gap-3">
               {habilidades.map(({ Icon, label }) => (
                 <div
                   key={label}
-                  className="bg-white rounded-xl p-4 border border-[#EDE9FE] flex items-center gap-3 hover:border-[#C4B5FD] transition-colors"
+                  className="bg-white rounded-xl p-4 border flex items-center gap-3 hover:opacity-80 transition-opacity"
+                  style={{ borderColor: '#D2D5F4' }}
                 >
-                  <Icon size={20} className="text-[#7C3AED] shrink-0" />
-                  <span className="text-sm font-medium text-[#44403C] leading-tight">{label}</span>
+                  <Icon size={20} className="shrink-0" style={{ color: '#B5477A' }} />
+                  <span className="text-sm font-medium leading-tight" style={{ color: '#343434' }}>{label}</span>
                 </div>
               ))}
             </div>
