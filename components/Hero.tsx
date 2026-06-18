@@ -1,5 +1,3 @@
-import { Camera } from "lucide-react";
-
 export default function Hero() {
   return (
     <section
@@ -45,11 +43,12 @@ export default function Hero() {
 
         {/* Placeholder image area */}
         <div className="mt-16 mx-auto max-w-3xl">
-          <div className="aspect-[16/7] rounded-2xl border-2 border-dashed flex items-center justify-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.7 }}>
-            <div className="text-center flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
-              <Camera size={40} />
-              <p className="text-sm font-medium">Foto destacada del club</p>
-            </div>
+          <div className="aspect-[16/7] rounded-2xl overflow-hidden">
+            <img
+              src="/hero-foto.jpg"
+              alt="Encuentro de Polifónica"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+            />
           </div>
         </div>
       </div>
