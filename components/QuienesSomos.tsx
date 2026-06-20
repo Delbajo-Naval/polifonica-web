@@ -1,4 +1,4 @@
-import { GraduationCap, BookOpen, Gamepad2, FileText, Camera } from "lucide-react";
+import { GraduationCap, BookOpen, Gamepad2, FileText } from "lucide-react";
 
 const logros = [
   {
@@ -27,11 +27,12 @@ export default function QuienesSomos() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Photo placeholder */}
           <div className="order-2 md:order-1">
-            <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl border-2 border-dashed flex items-center justify-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.8 }}>
-              <div className="text-center flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
-                <Camera size={40} />
-                <p className="text-sm font-medium">Foto de Luciana</p>
-              </div>
+            <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden">
+              <img
+                src="/perfil-luciana.jpg"
+                alt="Luciana Minadeo"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+              />
             </div>
           </div>
 
