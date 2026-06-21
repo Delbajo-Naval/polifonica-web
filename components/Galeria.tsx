@@ -7,7 +7,6 @@ const fotos = [
   { src: "club-juegos-adolescentes-posadas-2023.jpg", alt: "Club de juegos de mesa para adolescentes, 2023" },
   { src: "animacion-cumpleanos-2025.jpg", alt: "Animación de cumpleaños con juegos de mesa, 2025" },
   { src: "semana-estudiante-epja-2025.jpg", alt: "Semana del estudiante, secundario EPJA, 2025" },
-  { src: "animacion-cumpleanos-2025-b.jpg", alt: "Animación de cumpleaños con juegos de mesa, 2025" },
   { src: "tardes-posadas-plaza-shopping-2025.jpg", alt: "Tardes de juegos de mesa en Posadas Plaza Shopping" },
   { src: "evento-bambino-juegos-2025.jpg", alt: "Evento con Bambino Juegos y Juguetes, 2025" },
   { src: "tardes-posadas-plaza-shopping-familias-2025.jpg", alt: "Tardes de juegos en familia, Posadas Plaza Shopping" },
