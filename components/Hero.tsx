@@ -42,8 +42,8 @@ export default function Hero() {
         </div>
 
         {/* Hero image */}
-        <div className="mt-16 mx-auto max-w-5xl">
-          <div className="aspect-[16/6] rounded-2xl overflow-hidden">
+        <div className="mt-16 mx-auto max-w-2xl">
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden">
             <img
               src="/hero-foto.jpg"
               alt="Encuentro de Polifónica"
