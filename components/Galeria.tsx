@@ -1,12 +1,20 @@
-import { Camera } from "lucide-react";
-
-const placeholders = [
-  { id: 1, label: "Club de Juegos · Posadas Plaza", aspect: "aspect-[4/3]" },
-  { id: 2, label: "Taller UNaM · Adultos mayores", aspect: "aspect-[3/4]" },
-  { id: 3, label: "Club del Ajedrez · Posadas", aspect: "aspect-[4/3]" },
-  { id: 4, label: "Selección de juegos", aspect: "aspect-[4/3]" },
-  { id: 5, label: "Encuentro · 4ta edición", aspect: "aspect-[3/4]" },
-  { id: 6, label: "Juego en equipo", aspect: "aspect-[4/3]" },
+const fotos = [
+  { src: "club-juegos-adolescentes-posadas-2023.jpg", alt: "Club de juegos de mesa para adolescentes, 2023", aspect: "aspect-[4/3]" },
+  { src: "animacion-cumpleanos-2025.jpg", alt: "Animación de cumpleaños con juegos de mesa, 2025", aspect: "aspect-[3/4]" },
+  { src: "semana-estudiante-epja-2025.jpg", alt: "Semana del estudiante, secundario EPJA, 2025", aspect: "aspect-[4/3]" },
+  { src: "animacion-cumpleanos-2025-b.jpg", alt: "Animación de cumpleaños con juegos de mesa, 2025", aspect: "aspect-[4/3]" },
+  { src: "tardes-posadas-plaza-shopping-2025.jpg", alt: "Tardes de juegos de mesa en Posadas Plaza Shopping", aspect: "aspect-[3/4]" },
+  { src: "evento-bambino-juegos-2025.jpg", alt: "Evento con Bambino Juegos y Juguetes, 2025", aspect: "aspect-[4/3]" },
+  { src: "tardes-posadas-plaza-shopping-familias-2025.jpg", alt: "Tardes de juegos en familia, Posadas Plaza Shopping", aspect: "aspect-[4/3]" },
+  { src: "tardes-posadas-plaza-shopping-2025-b.jpg", alt: "Tardes de juegos de mesa en Posadas Plaza Shopping", aspect: "aspect-[3/4]" },
+  { src: "club-juegos-adolescentes-2024.jpg", alt: "Club de juegos de mesa para adolescentes, 2024", aspect: "aspect-[4/3]" },
+  { src: "desarrollo-competencias-secundario-2023.jpg", alt: "Desarrollo de competencias y educación emocional, Nivel Secundario", aspect: "aspect-[4/3]" },
+  { src: "congreso-nacional-literaturas-2024.jpg", alt: "Congreso Nacional de Literaturas, 2024", aspect: "aspect-[3/4]" },
+  { src: "tardes-club-ajedrez-2025.jpg", alt: "Tardes de juegos de mesa en el Club del Ajedrez", aspect: "aspect-[4/3]" },
+  { src: "juegos-mesa-aula-2022.jpg", alt: "Juegos de mesa en el aula, 2022", aspect: "aspect-[4/3]" },
+  { src: "proyecto-creacion-juegos-mesa-2023.jpg", alt: "Proyecto de creación de juegos de mesa, etapa inicial", aspect: "aspect-[3/4]" },
+  { src: "club-juegos-adolescentes-invierno-2025.jpg", alt: "Club de juegos de mesa, edición invierno 2025", aspect: "aspect-[4/3]" },
+  { src: "club-juegos-adolescentes-posadas-2023-b.jpg", alt: "Club de juegos de mesa para adolescentes, 2023", aspect: "aspect-[4/3]" },
 ];
 
 export default function Galeria() {
@@ -23,23 +31,19 @@ export default function Galeria() {
         </div>
 
         <div className="columns-2 md:columns-3 gap-4 space-y-4">
-          {placeholders.map((p) => (
+          {fotos.map((foto) => (
             <div
-              key={p.id}
-              className={`${p.aspect} break-inside-avoid rounded-xl border-2 border-dashed flex items-center justify-center overflow-hidden`}
-              style={{ backgroundColor: '#D2D5F4', borderColor: '#B5477A', opacity: 0.8 }}
+              key={foto.src}
+              className={`${foto.aspect} break-inside-avoid rounded-xl overflow-hidden`}
             >
-              <div className="text-center p-4 flex flex-col items-center gap-2" style={{ color: '#B5477A' }}>
-                <Camera size={28} />
-                <p className="text-xs font-medium leading-tight">{p.label}</p>
-              </div>
+              <img
+                src={`/images/galeria-polifonica/${foto.src}`}
+                alt={foto.alt}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+              />
             </div>
           ))}
         </div>
-
-        <p className="text-center text-sm mt-8" style={{ color: '#343434', opacity: 0.5 }}>
-          Las fotos reales se cargarán próximamente
-        </p>
       </div>
     </section>
   );
