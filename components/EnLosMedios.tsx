@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { AtSign } from "lucide-react";
 
 export default function EnLosMedios() {
   return (
@@ -40,7 +40,7 @@ export default function EnLosMedios() {
             className="rounded-2xl p-8 border flex flex-col items-center text-center gap-5"
             style={{ backgroundColor: 'white', borderColor: '#D2D5F4' }}
           >
-            <Instagram size={40} style={{ color: '#B5477A' }} />
+            <AtSign size={40} style={{ color: '#B5477A' }} />
             <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold" style={{ color: '#343434' }}>
               @polifonica_ok
             </p>
