@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { AtSign, Linkedin } from "lucide-react";
 
 export default function EnLosMedios() {
   useEffect(() => {
@@ -30,9 +31,11 @@ export default function EnLosMedios() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* Columna 1 — Video YouTube */}
-          <div>
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+
+          {/* COLUMNA IZQUIERDA */}
+          <div className="flex flex-col gap-4">
+            {/* Video YouTube */}
             <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px' }}>
               <iframe
                 src="https://www.youtube.com/embed/T0jP-vrxpiM"
@@ -42,14 +45,41 @@ export default function EnLosMedios() {
                 allowFullScreen
               />
             </div>
-            <p className="mt-3 text-sm font-medium" style={{ color: '#343434', opacity: 0.7 }}>
+            <p className="text-sm font-medium" style={{ color: '#343434', opacity: 0.7 }}>
               Entrevista a Luciana Minadeo
             </p>
+
+            {/* Cards de redes sociales */}
+            <div className="grid grid-cols-2 gap-4 mt-2">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/polifonica_ok"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center gap-2 p-5 rounded-xl border bg-white text-center hover:opacity-80 transition-opacity"
+                style={{ borderColor: '#D2D5F4' }}
+              >
+                <AtSign size={28} style={{ color: '#B5477A' }} />
+                <span className="text-sm font-semibold" style={{ color: '#343434' }}>@polifonica_ok</span>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/luciana-minadeo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center gap-2 p-5 rounded-xl border bg-white text-center hover:opacity-80 transition-opacity"
+                style={{ borderColor: '#D2D5F4' }}
+              >
+                <Linkedin size={28} style={{ color: '#B5477A' }} />
+                <span className="text-sm font-semibold" style={{ color: '#343434' }}>Luciana Minadeo</span>
+              </a>
+            </div>
           </div>
 
-          {/* Columna 2 — Instagram embed */}
-          <div>
-            <div style={{ borderRadius: '12px', overflow: 'hidden', display: 'flex', justifyContent: 'center', background: '#fff' }}>
+          {/* COLUMNA DERECHA — Instagram embed */}
+          <div className="flex flex-col">
+            <div className="flex-1 rounded-xl overflow-hidden flex justify-center" style={{ background: '#fff', border: '1px solid #D2D5F4' }}>
               <blockquote
                 className="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/p/DIM8Jbxui_y/"
@@ -69,6 +99,7 @@ export default function EnLosMedios() {
               </a>
             </p>
           </div>
+
         </div>
       </div>
     </section>
