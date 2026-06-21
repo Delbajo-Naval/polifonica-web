@@ -20,7 +20,7 @@ export default function Hero() {
         <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>
           Una propuesta que involucra mediación pedagógica profesional
           con juegos de mesa modernos. Encuentros presenciales para adolescentes,
-          instituciones y empresas que eligen el pensamiento estratégico
+          instituciones y empresas que eligen el pensamiento estratégico y creativo
           como herramienta de transformación.
         </p>
 
