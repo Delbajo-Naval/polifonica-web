@@ -5,6 +5,7 @@ import Programa from "@/components/Programa";
 import Instituciones from "@/components/Instituciones";
 import Empresas from "@/components/Empresas";
 import Galeria from "@/components/Galeria";
+import EnLosMedios from "@/components/EnLosMedios";
 import Contacto from "@/components/Contacto";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Instituciones />
         <Empresas />
         <Galeria />
+        <EnLosMedios />
         <Contacto />
       </main>
       <Footer />

@@ -9,6 +9,7 @@ const links = [
   { label: "Instituciones", href: "#instituciones" },
   { label: "Empresas", href: "#empresas" },
   { label: "Galería", href: "#galeria" },
+  { label: "En los medios", href: "#en-los-medios" },
   { label: "Contacto", href: "#contacto" },
 ];
 
