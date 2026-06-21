@@ -33,30 +33,40 @@ export default function Empresas() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Stat highlight */}
-          <div className="rounded-2xl p-10 shadow-sm border text-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
-            <p className="text-7xl font-bold font-[family-name:var(--font-playfair)] mb-3" style={{ color: '#B5477A' }}>30%</p>
-            <p className="text-lg font-medium mb-4" style={{ color: '#343434' }}>de los equipos colabora bien entre áreas</p>
-            <p className="text-sm" style={{ color: '#343434', opacity: 0.6 }}>Fuente: Asana State of Work 2025</p>
+          {/* Stats + descripción */}
+          <div className="flex flex-col gap-6">
+            {/* Dos stats lado a lado */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-2xl p-6 shadow-sm border text-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
+                <p className="text-6xl font-bold font-[family-name:var(--font-playfair)] mb-3" style={{ color: '#B5477A' }}>80%</p>
+                <p className="text-sm font-medium mb-3" style={{ color: '#343434' }}>del tiempo laboral se consume en colaboración mal gestionada</p>
+                <p className="text-xs leading-snug" style={{ color: '#343434', opacity: 0.6 }}>Harvard Business Review, Cross, Rebele & Grant (2016)</p>
+              </div>
+              <div className="rounded-2xl p-6 shadow-sm border text-center" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
+                <p className="text-6xl font-bold font-[family-name:var(--font-playfair)] mb-3" style={{ color: '#B5477A' }}>30%</p>
+                <p className="text-sm font-medium mb-3" style={{ color: '#343434' }}>de los equipos colabora bien entre áreas</p>
+                <p className="text-xs leading-snug" style={{ color: '#343434', opacity: 0.6 }}>Asana, State of Work 2025</p>
+              </div>
+            </div>
 
-            <div className="my-8 border-t" style={{ borderColor: '#B5477A', opacity: 0.2 }} />
-
-            <p className="leading-relaxed mb-6" style={{ color: '#343434', opacity: 0.8 }}>
-              Los juegos de mesa modernos crean situaciones reales de colaboración,
-              negociación y toma de decisiones bajo presión —
-              en un entorno donde equivocarse no tiene costo.
-            </p>
-
-            <a
-              href="#contacto"
-              className="inline-flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: '#B5477A' }}
-            >
-              Diseñar una jornada
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
+            {/* Descripción y botón */}
+            <div className="rounded-2xl p-7 shadow-sm border" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
+              <p className="leading-relaxed mb-6" style={{ color: '#343434', opacity: 0.8 }}>
+                Los juegos de mesa modernos crean situaciones reales de colaboración,
+                negociación y toma de decisiones bajo presión —
+                en un entorno donde equivocarse no tiene costo.
+              </p>
+              <a
+                href="#contacto"
+                className="inline-flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
+                style={{ backgroundColor: '#B5477A' }}
+              >
+                Diseñar una jornada
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Differentials */}
