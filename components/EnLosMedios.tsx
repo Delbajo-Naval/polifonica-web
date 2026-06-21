@@ -1,6 +1,18 @@
-import { AtSign } from "lucide-react";
+"use client";
+
+import { useEffect } from "react";
 
 export default function EnLosMedios() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section
       id="en-los-medios"
@@ -35,26 +47,27 @@ export default function EnLosMedios() {
             </p>
           </div>
 
-          {/* Columna 2 — Instagram */}
-          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', background: 'white', border: '1px solid #D2D5F4' }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', gap: '16px', textAlign: 'center' }}>
-              <AtSign size={40} style={{ color: '#B5477A' }} />
-              <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold" style={{ color: '#343434' }}>
-                @polifonica_ok
-              </p>
-              <p className="text-sm leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>
-                Seguí el día a día del club, fotos de encuentros y novedades
-              </p>
+          {/* Columna 2 — Instagram embed */}
+          <div>
+            <div style={{ borderRadius: '12px', overflow: 'hidden', display: 'flex', justifyContent: 'center', background: '#fff' }}>
+              <blockquote
+                className="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DIM8Jbxui_y/"
+                data-instgrm-version="14"
+                style={{ margin: 0, width: '100%', maxWidth: '540px' }}
+              />
+            </div>
+            <p className="mt-3 text-sm text-center">
               <a
                 href="https://www.instagram.com/polifonica_ok"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: '#B5477A' }}
+                className="font-medium hover:underline"
+                style={{ color: '#B5477A' }}
               >
-                Seguir en Instagram
+                Ver más en @polifonica_ok
               </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>
