@@ -42,12 +42,12 @@ export default function Hero() {
         </div>
 
         {/* Hero image */}
-        <div className="mt-16 mx-auto max-w-2xl">
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+        <div className="mt-16 mx-auto max-w-3xl">
+          <div className="aspect-[16/11] rounded-2xl overflow-hidden">
             <img
               src="/hero-foto.jpg"
               alt="Encuentro de Polifónica"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', borderRadius: 'inherit' }}
             />
           </div>
         </div>
