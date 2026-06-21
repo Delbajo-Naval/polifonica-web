@@ -41,9 +41,9 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Placeholder image area */}
-        <div className="mt-16 mx-auto max-w-3xl">
-          <div className="aspect-[16/7] rounded-2xl overflow-hidden">
+        {/* Hero image */}
+        <div className="mt-16 mx-auto max-w-5xl">
+          <div className="aspect-[16/6] rounded-2xl overflow-hidden">
             <img
               src="/hero-foto.jpg"
               alt="Encuentro de Polifónica"
@@ -51,14 +51,6 @@ export default function Hero() {
             />
           </div>
         </div>
-      </div>
-
-      {/* Scroll hint */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1" style={{ color: '#B5477A' }}>
-        <span className="text-xs font-medium">Conocé más</span>
-        <svg className="animate-bounce" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M6 9l6 6 6-6" />
-        </svg>
       </div>
     </section>
   );
