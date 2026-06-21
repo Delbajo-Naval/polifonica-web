@@ -20,6 +20,9 @@ const fotos = [
   { src: "proyecto-creacion-juegos-mesa-2023.jpg", alt: "Proyecto de creación de juegos de mesa, etapa inicial" },
   { src: "club-juegos-adolescentes-invierno-2025.jpg", alt: "Club de juegos de mesa, edición invierno 2025" },
   { src: "club-juegos-adolescentes-posadas-2023-b.jpg", alt: "Club de juegos de mesa para adolescentes, 2023" },
+  { src: "torneo-tichu-manija-fest-2026-a.jpg", alt: "Entrega de premio, torneo de Tichu en Manija Fest, 2026" },
+  { src: "torneo-tichu-manija-fest-2026-b.jpg", alt: "Torneo de Tichu en Manija Fest, 2026" },
+  { src: "devir-pockets-posadas-plaza-2025.jpg", alt: "Presentación de Devir Pockets en Posadas Plaza Shopping" },
 ];
 
 type Foto = typeof fotos[number];
