@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { AtSign, Linkedin } from "lucide-react";
+import { AtSign, Link } from "lucide-react";
 
 export default function EnLosMedios() {
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function EnLosMedios() {
                 className="flex flex-col items-center justify-center gap-2 p-5 rounded-xl border bg-white text-center hover:opacity-80 transition-opacity"
                 style={{ borderColor: '#D2D5F4' }}
               >
-                <Linkedin size={28} style={{ color: '#B5477A' }} />
+                <Link size={28} style={{ color: '#B5477A' }} />
                 <span className="text-sm font-semibold" style={{ color: '#343434' }}>Luciana Minadeo</span>
               </a>
             </div>
