@@ -1,4 +1,4 @@
-import { GraduationCap, BookOpen, Gamepad2, FileText } from "lucide-react";
+import { GraduationCap, BookOpen, Gamepad2, FileText, Brain, Video } from "lucide-react";
 
 const logros = [
   {
@@ -70,6 +70,44 @@ export default function QuienesSomos() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* El equipo */}
+        <div className="mt-20">
+          <p className="font-semibold text-sm uppercase tracking-widest mb-8 text-center" style={{ color: '#B5477A' }}>
+            El equipo
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {/* Florencia Daly */}
+            <div className="bg-white rounded-2xl p-7 border" style={{ borderColor: '#D2D5F4' }}>
+              <Brain size={28} className="mb-4" style={{ color: '#B5477A' }} />
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold mb-1" style={{ color: '#343434' }}>
+                Florencia Daly
+              </h3>
+              <p className="text-sm font-semibold mb-3" style={{ color: '#B5477A' }}>
+                Psicóloga · Co-diseño del programa
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: '#343434', opacity: 0.75 }}>
+                Aporta la mirada psicológica y socioemocional al diseño de cada encuentro,
+                garantizando un abordaje integral del grupo.
+              </p>
+            </div>
+
+            {/* Federico Saint Girons */}
+            <div className="bg-white rounded-2xl p-7 border" style={{ borderColor: '#D2D5F4' }}>
+              <Video size={28} className="mb-4" style={{ color: '#B5477A' }} />
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold mb-1" style={{ color: '#343434' }}>
+                Federico Saint Girons
+              </h3>
+              <p className="text-sm font-semibold mb-3" style={{ color: '#B5477A' }}>
+                Realizador audiovisual · Difusión y contenido
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: '#343434', opacity: 0.75 }}>
+                Co-fundador de Evolución Manija, productora de encuentros de juegos de mesa.
+                A cargo de la documentación visual y difusión del programa.
+              </p>
+            </div>
           </div>
         </div>
       </div>
