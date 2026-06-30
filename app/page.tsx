@@ -16,9 +16,11 @@ export default function Home() {
       <main>
         <Hero />
         <QuienesSomos />
+        <div id="colaboraciones" />
         <Programa />
         <Instituciones />
         <Empresas />
+        <div id="curaduria" />
         <Galeria />
         <EnLosMedios />
         <Contacto />
