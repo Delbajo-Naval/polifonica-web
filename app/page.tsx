@@ -4,6 +4,7 @@ import QuienesSomos from "@/components/QuienesSomos";
 import Programa from "@/components/Programa";
 import Instituciones from "@/components/Instituciones";
 import Empresas from "@/components/Empresas";
+import Colaboraciones from "@/components/Colaboraciones";
 import Curaduria from "@/components/Curaduria";
 import Galeria from "@/components/Galeria";
 import EnLosMedios from "@/components/EnLosMedios";
@@ -17,7 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <QuienesSomos />
-        <div id="colaboraciones" />
+        <Colaboraciones />
         <Programa />
         <Instituciones />
         <Empresas />
