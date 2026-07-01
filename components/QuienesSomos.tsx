@@ -7,16 +7,11 @@ const logros = [
   },
   {
     Icon: BookOpen,
-    texto: "Editora académica e investigadora en narrativa de juegos de mesa",
+    texto: "Investigadora en abordaje semiótico y narrativa de los juegos de mesa modernos",
   },
   {
     Icon: Gamepad2,
-    texto: "Creadora de contenido para Devir Argentina",
-  },
-  {
-    Icon: FileText,
-    texto:
-      '"Abordaje semiótico hacia la narrativa de los juegos de mesa modernos" — Congreso Nacional de Literaturas, 2025',
+    texto: "Creadora de contenido en redes para Devir Argentina",
   },
 ];
 
@@ -25,7 +20,7 @@ export default function QuienesSomos() {
     <section id="quienes-somos" className="py-20 sm:py-28" style={{ backgroundColor: '#D2D5F4' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Photo placeholder */}
+          {/* Foto */}
           <div className="order-2 md:order-1">
             <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden">
               <img
@@ -41,24 +36,25 @@ export default function QuienesSomos() {
             <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
               Quiénes somos
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-6 leading-tight" style={{ color: '#343434' }}>
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-2 leading-tight" style={{ color: '#343434' }}>
               Luciana Minadeo
             </h2>
+            <p className="text-sm font-medium mb-6" style={{ color: '#B5477A' }}>
+              Profesora y Licenciada en Letras · Creadora y coordinadora de Polifónica
+            </p>
+
             <div className="text-lg leading-relaxed mb-8 text-justify space-y-4" style={{ color: '#343434', opacity: 0.75 }}>
               <p>
-                Soy Profesora y Licenciada en Letras, especialista en juegos de mesa
-                como herramienta educativa y cultural. A lo largo de mi trayectoria
-                trabajé en instituciones públicas y privadas en niveles primario,
-                secundario y universitario, acompañando procesos de aprendizaje en
-                Lengua y Literatura y diseñando propuestas pedagógicas con impacto real.
+                Creé Polifónica como una forma de integrar los juegos de mesa como herramienta
+                educativa y cultural. A lo largo de mi trayectoria trabajé en instituciones
+                públicas y privadas en niveles primario, secundario y universitario, acompañando
+                procesos de aprendizaje en Lengua y Literatura y diseñando propuestas pedagógicas
+                con impacto real.
               </p>
               <p>
-                Me especializo en producción y edición de textos, mediación cultural y
-                diseño de experiencias educativas innovadoras, integrando juegos de mesa
-                y tecnologías digitales como herramientas para el aprendizaje, la
-                socialización y el pensamiento crítico. Creé Polifónica convencida de
-                que jugar juntos es una de las formas más ricas de aprender, pensar
-                y vincularse.
+                Me especializo en mediación cultural y diseño de experiencias educativas
+                innovadoras, integrando juegos de mesa y tecnologías digitales como herramientas
+                para el aprendizaje, la socialización y el pensamiento crítico.
               </p>
             </div>
 
@@ -70,6 +66,24 @@ export default function QuienesSomos() {
                 </li>
               ))}
             </ul>
+
+            <a
+              href="/cv-luciana-minadeo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                color: '#B5477A',
+                fontWeight: 500,
+                fontSize: '14px',
+                textDecoration: 'underline',
+                marginTop: '16px',
+              }}
+            >
+              <FileText size={16} /> Ver CV completo
+            </a>
           </div>
         </div>
 
