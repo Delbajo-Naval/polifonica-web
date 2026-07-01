@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -37,7 +38,10 @@ export default function RootLayout({
       lang="es"
       className={`${playfair.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <WhatsAppWidget />
+      </body>
     </html>
   );
 }
