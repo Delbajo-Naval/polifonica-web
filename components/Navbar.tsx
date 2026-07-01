@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const programasItems = [
   { label: "Club para adolescentes", href: "#programa" },
-  { label: "Institutos y municipios", href: "#instituciones" },
+  { label: "Instituciones privadas y gubernamentales", href: "#instituciones" },
   { label: "Integración para empresas", href: "#empresas" },
   { label: "Curaduría y animación para eventos", href: "#curaduria" },
 ];

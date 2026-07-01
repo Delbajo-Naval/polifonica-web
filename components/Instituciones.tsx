@@ -31,7 +31,7 @@ export default function Instituciones() {
           {/* Content */}
           <div>
             <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
-              Para instituciones y municipios
+              Instituciones privadas y gubernamentales
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-1 leading-tight" style={{ color: '#343434' }}>
               Una propuesta cultural que falta
