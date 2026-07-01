@@ -9,7 +9,7 @@ const beneficios = [
   {
     Icon: Landmark,
     titulo: "Política cultural e inclusión",
-    texto: "Aborda la brecha en alfabetización estratégica: muchas instituciones ya tienen ajedrez, robótica y arte. Polifónica completa la oferta.",
+    texto: "Aborda una brecha estratégica: un programa cultural que se complementa con robótica, artes y cine y completa la oferta.",
   },
   {
     Icon: MapPin,
@@ -19,7 +19,7 @@ const beneficios = [
   {
     Icon: GraduationCap,
     titulo: "Dirección especializada",
-    texto: "Con investigación académica publicada en congreso nacional y trayectoria docente en todos los niveles.",
+    texto: "Con un equipo que conjuga psicología, respaldo académico y trayectoria en docencia en todos los niveles.",
   },
 ];
 
@@ -33,21 +33,24 @@ export default function Instituciones() {
             <p className="font-semibold text-sm uppercase tracking-widest mb-3" style={{ color: '#B5477A' }}>
               Para instituciones y municipios
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-6 leading-tight" style={{ color: '#343434' }}>
-              Una política cultural que falta
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold mb-1 leading-tight" style={{ color: '#343434' }}>
+              Una propuesta cultural que falta
             </h2>
+            <p className="text-base mb-6" style={{ color: '#343434', opacity: 0.5 }}>
+              para institutos y municipios
+            </p>
 
-            <blockquote className="border-l-4 pl-5 mb-8 rounded-r-xl py-4 pr-4" style={{ borderColor: '#B5477A', backgroundColor: '#D2D5F4' + '55' }}>
+            <blockquote className="border-l-4 pl-5 mb-8 rounded-r-xl py-4 pr-4" style={{ borderColor: '#B5477A', backgroundColor: 'rgba(210,213,244,0.35)' }}>
               <p className="italic leading-relaxed" style={{ color: '#343434' }}>
-                "Muchos municipios ya tienen ajedrez, robótica, cine y arte.
-                No tienen alfabetización en juegos de mesa contemporáneos."
+                "Muchos municipios y espacios ya cuentan con propuestas de ajedrez, robótica, cine y artes para niños o adultos.
+                Sin embargo, la oferta para adolescentes que permita la socialización directa, aún es un vacío por llenar."
               </p>
             </blockquote>
 
             <p className="leading-relaxed mb-8" style={{ color: '#343434', opacity: 0.75 }}>
               Polifónica ofrece un programa con fundamentación pedagógica y académica
               que permite a las instituciones justificar el presupuesto como inversión
-              en cultura, educación y cohesión social — no como entretenimiento.
+              en cultura, educación y cohesión social — no solo como entretenimiento.
             </p>
 
             <a

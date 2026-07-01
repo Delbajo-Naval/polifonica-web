@@ -11,7 +11,7 @@ const diferenciales = [
   },
   {
     Icon: MessageSquare,
-    texto: "Dinámicas que revelan patrones de comunicación reales",
+    texto: "Dinámicas que revelan contextos y situaciones de comunicación reales.",
   },
   {
     Icon: BarChart2,
@@ -53,11 +53,11 @@ export default function Empresas() {
             <div className="rounded-2xl p-7 shadow-sm border" style={{ backgroundColor: '#D2D5F4', borderColor: '#D2D5F4' }}>
               <p className="leading-relaxed mb-6" style={{ color: '#343434', opacity: 0.8 }}>
                 Los juegos de mesa modernos crean situaciones reales de colaboración,
-                negociación y toma de decisiones bajo presión —
+                negociación y toma de decisiones bajo presión
                 en un entorno donde equivocarse no tiene costo.
               </p>
               <a
-                href="#contacto"
+                href="#galeria"
                 className="inline-flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
                 style={{ backgroundColor: '#B5477A' }}
               >
@@ -75,10 +75,10 @@ export default function Empresas() {
               Por qué Polifónica es diferente
             </h3>
             <p className="mb-8 leading-relaxed" style={{ color: '#343434', opacity: 0.75 }}>
-              No es un escape room ni una tarde de juegos.
-              Cada jornada tiene objetivo, estructura y diseño pedagógico
-              orientado a resultados concretos: comunicación, trabajo en equipo
-              y toma de decisiones entre áreas.
+              A diferencia de un Escape Room o una tarde de juegos, cada jornada organizada
+              por Polifónica tiene un objetivo, una estructura y un diseño pedagógico orientado
+              a resultados concretos: enriquecer la comunicación asertiva, afianzar el trabajo
+              en equipo o mejorar la toma de decisiones entre áreas.
             </p>
             <ul className="space-y-4">
               {diferenciales.map(({ Icon, texto }) => (

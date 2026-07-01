@@ -10,7 +10,7 @@ const habilidades = [
 ];
 
 const comoFunciona = [
-  { Icon: CalendarDays, texto: "Encuentros semanales presenciales de 2 horas" },
+  { Icon: CalendarDays, texto: "Encuentros semanales presenciales de 2 a 3 horas" },
   { Icon: UsersRound, texto: "Grupos de jóvenes de 13 a 17 años" },
   { Icon: Dices, texto: "Curaduría especializada de juegos de mesa modernos" },
   { Icon: GraduationCap, texto: "Mediación pedagógica activa — no juego libre" },
@@ -30,8 +30,9 @@ export default function Programa() {
             Para adolescentes
           </h2>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#343434', opacity: 0.7 }}>
-            Encuentros presenciales semanales de 2 horas para jóvenes de 13 a 17 años,
-            con curaduría especializada de juegos modernos y mediación pedagógica activa.
+            Encuentros presenciales semanales de 2 a 3 horas para jóvenes de 13 a 17 años.
+            Un trayecto a través de partidas de juegos de mesa modernos de complejidad progresiva,
+            con curaduría especializada y mediación pedagógica activa.
           </p>
         </div>
 

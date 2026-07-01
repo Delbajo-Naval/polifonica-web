@@ -52,7 +52,7 @@ export default function Galeria() {
             Galería
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold" style={{ color: '#343434' }}>
-            El club en imágenes
+            Polifónica en imágenes
           </h2>
         </div>
 
