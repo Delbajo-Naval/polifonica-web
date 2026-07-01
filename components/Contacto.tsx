@@ -107,7 +107,7 @@ export default function Contacto() {
             @polifonica_ok
           </a>
           <a
-            href="https://wa.me/5493764000000"
+            href="https://wa.me/5437643678998"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 font-medium hover:underline"
