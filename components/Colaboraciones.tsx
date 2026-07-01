@@ -22,6 +22,7 @@ const grupos = [
       { src: "/logos/logo-shopping.jpg", alt: "Posadas Plaza Shopping" },
       { src: "/logos/logo-evomanija.png", alt: "Evolución Manija" },
       { src: "/logos/logo-laplata.jpg", alt: "La Plata Lúdica" },
+      { src: "/logos/logo-octaedro.jpg", alt: "Octaedro" },
     ],
   },
 ];
