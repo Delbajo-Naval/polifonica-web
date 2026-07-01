@@ -43,7 +43,7 @@ export default function WhatsAppWidget() {
 
       {/* Botón */}
       <a
-        href="https://wa.me/5437643678998"
+        href="https://wa.me/543764367898"
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setHovered(true)}
