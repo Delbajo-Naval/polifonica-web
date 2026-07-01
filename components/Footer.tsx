@@ -8,7 +8,6 @@ export default function Footer() {
             <span className="font-[family-name:var(--font-playfair)] text-lg font-bold" style={{ color: '#D2D5F4' }}>
               Polifónica
             </span>
-            <span className="ml-1 text-sm" style={{ color: '#D2D5F4', opacity: 0.5 }}>— Club de Juegos de Mesa</span>
           </div>
 
           <div className="flex items-center gap-5 text-sm">
@@ -37,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t mt-6 pt-6 text-xs text-center sm:text-left" style={{ borderColor: 'rgba(210,213,244,0.2)', color: '#D2D5F4', opacity: 0.4 }}>
-          © {new Date().getFullYear()} Polifónica — Luciana Minadeo · Posadas, Misiones
+          © {new Date().getFullYear()} Polifónica — Luciana Minadeo
         </div>
       </div>
     </footer>
