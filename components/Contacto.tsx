@@ -1,31 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Backpack, Landmark, Briefcase, PartyPopper } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-
-type TipoConsulta = "adolescente" | "institucion" | "empresa" | "";
-
-const opciones: { value: TipoConsulta; Icon: LucideIcon; titulo: string }[] = [
-  {
-    value: "adolescente",
-    Icon: Backpack,
-    titulo: "Quiero inscribir a mi hijo/a al club",
-  },
-  {
-    value: "institucion",
-    Icon: Landmark,
-    titulo: "Soy institución o municipio",
-  },
-  {
-    value: "empresa",
-    Icon: Briefcase,
-    titulo: "Soy empresa, quiero una jornada",
-  },
-];
+import { PartyPopper } from "lucide-react";
 
 export default function Contacto() {
-  const [tipo, setTipo] = useState<TipoConsulta>("");
   const [enviado, setEnviado] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -50,37 +28,6 @@ export default function Contacto() {
 
         {!enviado ? (
           <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-sm border space-y-6" style={{ borderColor: '#D2D5F4' }}>
-            {/* Tipo de consulta */}
-            <div>
-              <label className="block text-sm font-semibold mb-3" style={{ color: '#343434' }}>
-                Tipo de consulta
-              </label>
-              <div className="grid sm:grid-cols-3 gap-3">
-                {opciones.map(({ value, Icon, titulo }) => (
-                  <button
-                    key={value}
-                    type="button"
-                    onClick={() => setTipo(value)}
-                    className="rounded-xl p-4 border-2 text-center transition-all cursor-pointer"
-                    style={
-                      tipo === value
-                        ? { borderColor: '#B5477A', backgroundColor: '#B5477A', color: 'white' }
-                        : { borderColor: '#D2D5F4', backgroundColor: '#FAFAF9' }
-                    }
-                  >
-                    <Icon
-                      size={24}
-                      className="mx-auto mb-1"
-                      style={{ color: tipo === value ? 'white' : '#B5477A' }}
-                    />
-                    <p className="text-xs font-medium leading-tight" style={{ color: tipo === value ? 'white' : '#343434' }}>
-                      {titulo}
-                    </p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
             {/* Nombre */}
             <div>
               <label className="block text-sm font-semibold mb-2" htmlFor="nombre" style={{ color: '#343434' }}>
