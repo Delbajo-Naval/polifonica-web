@@ -4,6 +4,7 @@ import QuienesSomos from "@/components/QuienesSomos";
 import Programa from "@/components/Programa";
 import Instituciones from "@/components/Instituciones";
 import Empresas from "@/components/Empresas";
+import Curaduria from "@/components/Curaduria";
 import Galeria from "@/components/Galeria";
 import EnLosMedios from "@/components/EnLosMedios";
 import Contacto from "@/components/Contacto";
@@ -20,7 +21,7 @@ export default function Home() {
         <Programa />
         <Instituciones />
         <Empresas />
-        <div id="curaduria" />
+        <Curaduria />
         <Galeria />
         <EnLosMedios />
         <Contacto />
