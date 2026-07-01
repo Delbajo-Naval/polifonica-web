@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
-          <img src="/logo-poli.png" alt="Polifónica" width={40} height={40} />
+          <img src="/logo-polifonicafooter.png" alt="Polifónica" width={48} height={48} style={{ objectFit: 'contain' }} />
           <span className="font-[family-name:var(--font-playfair)] text-xl font-bold" style={{ color: '#343434' }}>
             Polifónica
           </span>
