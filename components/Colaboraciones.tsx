@@ -13,7 +13,7 @@ const grupos = [
       { src: "/logos/logo-argentino3d.png", alt: "Argentino 3D" },
       { src: "/logos/logo-michigames.jpg", alt: "Michi Games" },
       { src: "/logos/logo-dobleg.png", alt: "DobleG" },
-      { src: "/logos/logo-invictus.jpg", alt: "Invictvs" },
+      { src: "/logos/logo-invictvs.png", alt: "Invictvs" },
     ],
   },
   {
