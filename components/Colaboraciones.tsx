@@ -58,13 +58,13 @@ export default function Colaboraciones() {
                 {grupo.logos.map((logo) => (
                   <div
                     key={logo.alt}
-                    className="bg-white rounded-xl p-3 border transition-transform hover:scale-105"
-                    style={{ borderColor: '#D2D5F4' }}
+                    className="bg-white rounded-xl border transition-transform hover:scale-105 flex items-center justify-center"
+                    style={{ borderColor: '#D2D5F4', width: '120px', height: '80px', padding: '10px' }}
                   >
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      style={{ height: '60px', width: 'auto', objectFit: 'contain', display: 'block' }}
+                      style={{ maxHeight: '60px', maxWidth: '100px', objectFit: 'contain', display: 'block' }}
                     />
                   </div>
                 ))}
