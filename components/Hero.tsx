@@ -24,22 +24,6 @@ export default function Hero() {
           como herramienta de transformación.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#contacto"
-            className="text-white font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity text-base shadow-lg"
-            style={{ backgroundColor: '#B5477A' }}
-          >
-            Quiero inscribirme
-          </a>
-          <a
-            href="#contacto"
-            className="bg-transparent font-semibold px-8 py-3.5 rounded-full border-2 hover:opacity-80 transition-opacity text-base"
-            style={{ borderColor: '#B5477A', color: '#B5477A' }}
-          >
-            Contactar
-          </a>
-        </div>
 
         {/* Hero image */}
         <div className="mt-16 mx-auto max-w-3xl">
