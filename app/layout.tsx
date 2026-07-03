@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Club de juegos de mesa moderno dirigido por Luciana Minadeo. Encuentros presenciales para adolescentes, instituciones y empresas en Buenos Aires.",
   icons: {
-    icon: '/logo-polifonicafooter.png',
+    icon: '/favicon.svg',
     apple: '/logo-polifonicafooter.png',
   },
   openGraph: {
