@@ -9,7 +9,6 @@ import Curaduria from "@/components/Curaduria";
 import Galeria from "@/components/Galeria";
 import EnLosMedios from "@/components/EnLosMedios";
 import Contacto from "@/components/Contacto";
-import Redes from "@/components/Redes";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
         <EnLosMedios />
         <Contacto />
       </main>
-      <Redes />
       <Footer />
     </>
   );
