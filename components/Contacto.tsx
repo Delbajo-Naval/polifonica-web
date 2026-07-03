@@ -6,9 +6,16 @@ import { PartyPopper } from "lucide-react";
 export default function Contacto() {
   const [enviado, setEnviado] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setEnviado(true);
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    const res = await fetch("https://formspree.io/f/xjgqpjre", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+    if (res.ok) setEnviado(true);
   };
 
   return (
@@ -35,6 +42,7 @@ export default function Contacto() {
               </label>
               <input
                 id="nombre"
+                name="nombre"
                 type="text"
                 required
                 placeholder="Tu nombre"
@@ -50,6 +58,7 @@ export default function Contacto() {
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 required
                 placeholder="tu@email.com"
@@ -65,6 +74,7 @@ export default function Contacto() {
               </label>
               <textarea
                 id="mensaje"
+                name="mensaje"
                 rows={4}
                 placeholder="Contanos tu consulta..."
                 className="w-full border rounded-xl px-4 py-3 placeholder:text-[#A8A29E] focus:outline-none focus:ring-2 transition resize-none"
