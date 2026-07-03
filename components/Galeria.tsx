@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const fotos = [
-  { src: "polifonica-foto1.jpg", alt: "Club de juegos de mesa, Polifónica", position: 'center top' },
+  { src: "polifonica-foto1.jpg", alt: "Club de juegos de mesa, Polifónica", position: 'center 20%' },
   { src: "desarrollo-competencias-secundario-2023.jpg", alt: "Desarrollo de competencias y educación emocional, Nivel Secundario" },
   { src: "semana-estudiante-epja-2025.jpg", alt: "Semana del estudiante, secundario EPJA, 2025" },
   { src: "tardes-posadas-plaza-shopping-2025.jpg", alt: "Tardes de juegos de mesa en Posadas Plaza Shopping" },
