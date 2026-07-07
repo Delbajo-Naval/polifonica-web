@@ -72,41 +72,11 @@ export default function EnLosMedios() {
               </a>
             </div>
 
-            {/* Dos embeds de Instagram lado a lado */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-xl overflow-hidden flex justify-center" style={{ background: '#fff', border: '1px solid #D2D5F4' }}>
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/p/DIM8Jbxui_y/"
-                  data-instgrm-version="14"
-                  style={{ margin: 0, width: '100%', maxWidth: '320px' }}
-                />
-              </div>
-              <div className="rounded-xl overflow-hidden flex justify-center" style={{ background: '#fff', border: '1px solid #D2D5F4' }}>
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/reel/DaNtO5Gu0K5/"
-                  data-instgrm-version="14"
-                  style={{ margin: 0, width: '100%', maxWidth: '320px' }}
-                />
-              </div>
-            </div>
-            <p className="text-sm text-center">
-              <a
-                href="https://www.instagram.com/polifonica_ok"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium hover:underline"
-                style={{ color: '#B5477A' }}
-              >
-                Ver más en @polifonica_ok
-              </a>
-            </p>
           </div>
 
           {/* COLUMNA DERECHA — Video de presentación */}
-          <div className="flex flex-col">
-            <div style={{ position: 'relative', paddingBottom: '177.78%', height: 0, overflow: 'hidden', borderRadius: '12px', background: '#000' }}>
+          <div className="flex flex-col items-center">
+            <div style={{ position: 'relative', width: '60%', paddingBottom: '106.67%', height: 0, overflow: 'hidden', borderRadius: '12px', background: '#000' }}>
               <iframe
                 src="https://www.youtube.com/embed/UMqTxqQiEhw"
                 title="Presentación Polifónica"
