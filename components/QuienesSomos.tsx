@@ -1,4 +1,4 @@
-import { GraduationCap, BookOpen, Gamepad2, FileText, Brain, Video } from "lucide-react";
+import { GraduationCap, BookOpen, Dices, FileText, Brain, Video } from "lucide-react";
 
 const logros = [
   {
@@ -10,7 +10,7 @@ const logros = [
     texto: "Investigadora en abordaje semiótico y narrativa de los juegos de mesa modernos",
   },
   {
-    Icon: Gamepad2,
+    Icon: Dices,
     texto: "Creadora de contenido en redes para Devir Argentina",
   },
 ];
