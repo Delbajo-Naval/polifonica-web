@@ -85,7 +85,7 @@ export default function EnLosMedios() {
               <div className="rounded-xl overflow-hidden flex justify-center" style={{ background: '#fff', border: '1px solid #D2D5F4' }}>
                 <blockquote
                   className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/p/DIM8Jbxui_y/"
+                  data-instgrm-permalink="https://www.instagram.com/reel/DaNtO5Gu0K5/"
                   data-instgrm-version="14"
                   style={{ margin: 0, width: '100%', maxWidth: '320px' }}
                 />
