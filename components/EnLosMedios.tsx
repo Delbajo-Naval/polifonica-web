@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function EnLosMedios() {
+  const [playVideo, setPlayVideo] = useState(false);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.instagram.com/embed.js";
@@ -76,14 +78,31 @@ export default function EnLosMedios() {
 
           {/* COLUMNA DERECHA — Video de presentación */}
           <div className="flex flex-col items-center">
-            <div style={{ position: 'relative', width: '60%', paddingBottom: '106.67%', height: 0, overflow: 'hidden', borderRadius: '12px', background: '#000' }}>
-              <iframe
-                src="https://www.youtube.com/embed/UMqTxqQiEhw"
-                title="Presentación Polifónica"
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+            <div style={{ position: 'relative', width: '60%', paddingBottom: '106.67%', borderRadius: '12px', overflow: 'hidden', background: '#000' }}>
+              {!playVideo ? (
+                <div
+                  onClick={() => setPlayVideo(true)}
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', cursor: 'pointer' }}
+                >
+                  <img
+                    src="/polifonica_presentacion-cover.jpg"
+                    alt="Ver video de presentación"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                  {/* Play button */}
+                  <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+              ) : (
+                <iframe
+                  src="https://www.youtube.com/embed/UMqTxqQiEhw?autoplay=1"
+                  title="Presentación Polifónica"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              )}
             </div>
             <p className="mt-3 text-sm font-medium text-center" style={{ color: '#343434', opacity: 0.7 }}>
               Polifónica — Video de presentación
