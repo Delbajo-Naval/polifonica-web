@@ -22,6 +22,8 @@ const fotos = [
   { src: "torneo-tichu-manija-fest-2026-a.jpg", alt: "Entrega de premio, torneo de Tichu en Manija Fest, 2026" },
   { src: "torneo-tichu-manija-fest-2026-b.jpg", alt: "Torneo de Tichu en Manija Fest, 2026" },
   { src: "devir-pockets-posadas-plaza-2025.jpg", alt: "Presentación de Devir Pockets en Posadas Plaza Shopping" },
+  { src: "magic-meeting-hogwarts-2026.jpg", alt: "Presentación de Código Secreto: Regreso a Hogwarts (Devir Argentina) en Magic Meeting (Colegio San José), Julio 2026" },
+  { src: "city-kids-devoto-2026.jpg", alt: "Presentación de Laberinto Mágico, Escalera Encantada y Fantasma Blitz (Devir Argentina) en City Kids (Devoto), Agosto 2026" },
 ];
 
 export default function Galeria() {

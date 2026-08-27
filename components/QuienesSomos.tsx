@@ -68,7 +68,7 @@ export default function QuienesSomos() {
             </ul>
 
             <a
-              href="/cv-luciana-minadeo.pdf"
+              href="https://canva.link/polifonica-cv"
               target="_blank"
               rel="noopener noreferrer"
               style={{

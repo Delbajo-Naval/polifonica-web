@@ -6,6 +6,7 @@ import Instituciones from "@/components/Instituciones";
 import Empresas from "@/components/Empresas";
 import Colaboraciones from "@/components/Colaboraciones";
 import Curaduria from "@/components/Curaduria";
+import Ludoteca from "@/components/Ludoteca";
 import Galeria from "@/components/Galeria";
 import EnLosMedios from "@/components/EnLosMedios";
 import Contacto from "@/components/Contacto";
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <QuienesSomos />
         <Colaboraciones />
+        <Ludoteca />
         <Programa />
         <Instituciones />
         <Empresas />

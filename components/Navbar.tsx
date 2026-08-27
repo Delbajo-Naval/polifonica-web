@@ -13,6 +13,7 @@ const programasItems = [
 const links = [
   { label: "Quiénes somos", href: "#quienes-somos" },
   { label: "Colaboraciones", href: "#colaboraciones" },
+  { label: "Ludoteca", href: "#ludoteca" },
   { label: "Portfolio", href: "#galeria" },
   { label: "En los medios", href: "#en-los-medios" },
 ];
