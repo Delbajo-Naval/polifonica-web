@@ -81,7 +81,7 @@ export default function Ludoteca() {
             Una colección en permanente crecimiento, con juegos seleccionados para crear experiencias de encuentro, aprendizaje y diversión.
           </p>
           <a
-            href="https://boardgamegeek.com/collection/user/Polifonica?1&sort=title&sortdir=asc&pageID=1&columns%5B%5D=rank&columns%5B%5D=title&columns%5B%5D=version&columns%5B%5D=status&columns%5B%5D=lastmodified&columns%5B%5D=rating&columns%5B%5D=avgrating&columns%5B%5D=numvoters&columns%5B%5D=thumbnail&columns%5B%5D=comment&columns%5B%5D=plays&columns%5B%5D=postdate&columns%5B%5D=avgweight&columns%5B%5D=acquisitiondate&subtype=boardgame&excludesubtype=&rankobjecttype=subtype&rankobjectid=1&own=1"
+            href="https://boardgamegeek.com/collection/user/Polifonica?gallery=large&sortdir=asc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Cthumbnail%7Cstatus%7Cversion%7Clastmodified%7Cacquisitiondate%7Cpostdate%7Crank%7Crating%7Cavgrating%7Cnumvoters%7Cplays%7Ccomment%7Cavgweight&geekranks=Board%20Game%20Rank&own=1&objecttype=thing&ff=1&subtype=boardgame"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full transition-opacity hover:opacity-75"
@@ -134,7 +134,7 @@ export default function Ludoteca() {
               Quiero sumar un juego
             </a>
             <a
-              href="https://boardgamegeek.com/collection/user/Polifonica"
+              href="https://boardgamegeek.com/collection/user/Polifonica?gallery=large&sortdir=asc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Cthumbnail%7Cstatus%7Cversion%7Clastmodified%7Cacquisitiondate%7Cpostdate%7Crank%7Crating%7Cavgrating%7Cnumvoters%7Cplays%7Ccomment%7Cavgweight&geekranks=Board%20Game%20Rank&own=1&objecttype=thing&ff=1&subtype=boardgame"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-semibold px-5 py-2.5 rounded-full text-center transition-opacity hover:opacity-80"
