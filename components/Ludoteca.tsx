@@ -80,12 +80,15 @@ export default function Ludoteca() {
           <p className="text-lg leading-relaxed mb-5 max-w-2xl mx-auto" style={{ color: '#343434', opacity: 0.75 }}>
             Una colección en permanente crecimiento, con juegos seleccionados para crear experiencias de encuentro, aprendizaje y diversión.
           </p>
-          <span
-            className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full"
+          <a
+            href="https://boardgamegeek.com/collection/user/Polifonica?1&sort=title&sortdir=asc&pageID=1&columns%5B%5D=rank&columns%5B%5D=title&columns%5B%5D=version&columns%5B%5D=status&columns%5B%5D=lastmodified&columns%5B%5D=rating&columns%5B%5D=avgrating&columns%5B%5D=numvoters&columns%5B%5D=thumbnail&columns%5B%5D=comment&columns%5B%5D=plays&columns%5B%5D=postdate&columns%5B%5D=avgweight&columns%5B%5D=acquisitiondate&subtype=boardgame&excludesubtype=&rankobjecttype=subtype&rankobjectid=1&own=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full transition-opacity hover:opacity-75"
             style={{ backgroundColor: '#D2D5F4', color: '#5A3E6B' }}
           >
-            Más de 150 juegos disponibles
-          </span>
+            Más de 150 juegos disponibles →
+          </a>
         </div>
 
         {/* Tarjetas categorías */}
