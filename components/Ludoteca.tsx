@@ -43,7 +43,7 @@ export default function Ludoteca() {
           <img
             src="/images/ludoteca/ludoteca-estante-2026.jpg"
             alt="Estante de la ludoteca de Polifónica"
-            style={{ width: '100%', height: '580px', objectFit: 'cover', objectPosition: 'center' }}
+            style={{ width: '100%', height: '720px', objectFit: 'cover', objectPosition: 'center' }}
           />
         </div>
 
