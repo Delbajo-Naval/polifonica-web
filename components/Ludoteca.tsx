@@ -1,4 +1,7 @@
-import { Zap, Brain, Users, BookOpen } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { Zap, Brain, Users, BookOpen, X } from "lucide-react";
 
 const categorias = [
   {
@@ -24,6 +27,8 @@ const categorias = [
 ];
 
 export default function Ludoteca() {
+  const [lightbox, setLightbox] = useState(false);
+
   return (
     <section id="ludoteca" className="py-20 sm:py-28" style={{ backgroundColor: '#F6F3ED' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -39,13 +44,36 @@ export default function Ludoteca() {
         </div>
 
         {/* Imagen hero */}
-        <div className="rounded-2xl overflow-hidden mb-6">
+        <div className="rounded-2xl overflow-hidden mb-6" style={{ cursor: 'pointer' }} onClick={() => setLightbox(true)}>
           <img
             src="/images/ludoteca/ludoteca-estante-2026.jpg"
             alt="Estante de la ludoteca de Polifónica"
             style={{ width: '100%', height: '720px', objectFit: 'cover', objectPosition: 'center' }}
           />
         </div>
+
+        {/* Lightbox */}
+        {lightbox && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ backgroundColor: 'rgba(0,0,0,0.88)' }}
+            onClick={() => setLightbox(false)}
+          >
+            <button
+              className="absolute top-4 right-4 text-white hover:opacity-70 transition-opacity"
+              onClick={() => setLightbox(false)}
+              aria-label="Cerrar"
+            >
+              <X size={32} />
+            </button>
+            <img
+              src="/images/ludoteca/ludoteca-estante-2026.jpg"
+              alt="Estante de la ludoteca de Polifónica"
+              style={{ maxWidth: '95vw', maxHeight: '92vh', objectFit: 'contain', borderRadius: '12px' }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        )}
 
         {/* Texto + badge */}
         <div className="text-center mb-14">
