@@ -39,11 +39,11 @@ export default function Ludoteca() {
         </div>
 
         {/* Imagen hero */}
-        <div className="rounded-2xl overflow-hidden mb-6" style={{ maxHeight: '420px' }}>
+        <div className="rounded-2xl overflow-hidden mb-6">
           <img
             src="/images/ludoteca/ludoteca-estante-2026.jpg"
             alt="Estante de la ludoteca de Polifónica"
-            style={{ width: '100%', height: '420px', objectFit: 'cover', objectPosition: 'center' }}
+            style={{ width: '100%', height: '580px', objectFit: 'cover', objectPosition: 'center' }}
           />
         </div>
 
